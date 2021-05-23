@@ -2,7 +2,7 @@
   <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
       <div class="text-center">
-        <img src="../static/logo-buscador.png" alt="Logo" />
+        <img id="logo" src="../static/logo-buscador.png" alt="Logo" />
         <v-text-field
           id="search-imput"
           v-model="searchQuery"
@@ -78,3 +78,9 @@ export default {
   },
 }
 </script>
+<style scoped>
+#logo {
+  max-width: 68%;
+  margin-bottom: 1.5rem;
+}
+</style>
